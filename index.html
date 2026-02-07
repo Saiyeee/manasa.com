@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rose Day</title>
+<title>Proposal Day</title>
 
 <style>
 * {
@@ -14,41 +14,41 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(135deg, #f8a5c0 0%, #fecdd3 50%, #fff0f6 100%);
+  background: linear-gradient(135deg, #ffd6a5 0%, #ffc857 50%, #fff9e3 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* COUNTDOWN SCREEN - Rose Day theme */
+/* COUNTDOWN SCREEN - Proposal Day theme */
 .countdown-screen {
-  background: linear-gradient(135deg, #fff0f6 0%, #ffd6e0 50%, #fecdd3 100%);
-  color: #6b1220;
+  background: linear-gradient(135deg, #fff9e3 0%, #ffe8b6 50%, #ffc857 100%);
+  color: #8b5a00;
   width: 90%;
   max-width: 420px;
   padding: 36px 28px;
   border-radius: 18px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(107,18,32,0.12);
-  border: 1px solid rgba(107,18,32,0.08);
+  box-shadow: 0 20px 40px rgba(139,90,0,0.12);
+  border: 1px solid rgba(139,90,0,0.08);
 }
 
 .countdown-number {
   font-size: 64px;
   font-weight: 800;
   margin: 6px 0;
-  color: #9f1239;
+  color: #c97317;
   letter-spacing: -1px;
 }
 
 .countdown-sub {
   font-size: 15px;
   opacity: 0.95;
-  color: #5b0820;
+  color: #6b4423;
 }
 
 .countdown-screen:before {
-  content: "🌹";
+  content: "💍";
   display: block;
   font-size: 36px;
   margin-bottom: 8px;
@@ -67,13 +67,13 @@ body {
 }
 
 .celebrate-card {
-  background: linear-gradient(135deg,#fff0f6 0%, #ffe4ec 60%);
-  color: #6b1220;
+  background: linear-gradient(135deg,#fff9e3 0%, #ffe8b6 60%);
+  color: #8b5a00;
   padding: 36px 32px;
   border-radius: 18px;
   text-align: center;
-  box-shadow: 0 40px 80px rgba(107,18,32,0.16);
-  border: 1px solid rgba(107,18,32,0.08);
+  box-shadow: 0 40px 80px rgba(139,90,0,0.16);
+  border: 1px solid rgba(139,90,0,0.08);
   transform: translateY(0) scale(1);
   animation: celebratePop 420ms cubic-bezier(.2,.9,.3,1);
 }
@@ -89,12 +89,12 @@ body {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 12px;
-  color: #8b1233;
-  background: linear-gradient(90deg,#ff6fa3,#c81e5b 60%,#9f1239);
+  color: #b8860b;
+  background: linear-gradient(90deg,#ff9500,#c97317 60%,#b8860b);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 6px 18px rgba(155,20,50,0.10);
+  text-shadow: 0 6px 18px rgba(185,134,11,0.10);
   animation: messagePop 720ms cubic-bezier(.2,.9,.3,1), messageGlow 1.4s ease-in-out 720ms infinite alternate;
 }
 
@@ -105,8 +105,8 @@ body {
 }
 
 @keyframes messageGlow {
-  0% { text-shadow: 0 6px 18px rgba(155,20,50,0.06), 0 0 0 rgba(255,255,255,0); filter: saturate(1); }
-  100% { text-shadow: 0 10px 28px rgba(155,20,50,0.18), 0 0 12px rgba(255,182,193,0.18); filter: saturate(1.08) contrast(1.02); }
+  0% { text-shadow: 0 6px 18px rgba(185,134,11,0.06), 0 0 0 rgba(255,255,255,0); filter: saturate(1); }
+  100% { text-shadow: 0 10px 28px rgba(185,134,11,0.18), 0 0 12px rgba(255,215,0,0.18); filter: saturate(1.08) contrast(1.02); }
 }
 
 .celebrate-message {
@@ -141,21 +141,21 @@ body {
 
 /* CARD */
 .quiz-card {
-  background: linear-gradient(135deg, #fff0f6 0%, #ffe4ec 100%);
+  background: linear-gradient(135deg, #fff9e3 0%, #ffe8b6 100%);
   width: 90%;
   max-width: 420px;
   padding: 25px;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(107,18,32,0.12);
+  box-shadow: 0 20px 40px rgba(139,90,0,0.12);
   text-align: center;
   position: relative;
-  border: 1px solid rgba(107,18,32,0.08);
+  border: 1px solid rgba(139,90,0,0.08);
 }
 
 /* SCORE */
 .score {
-  background: linear-gradient(90deg, #ffd6e0, #ffccd5);
-  color: #6b1220;
+  background: linear-gradient(90deg, #ffc857, #ffb700);
+  color: #8b5a00;
   padding: 8px;
   border-radius: 10px;
   font-weight: 600;
@@ -167,7 +167,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #6b1220;
+  color: #8b5a00;
 }
 
 /* BUTTONS */
@@ -176,18 +176,18 @@ body {
   padding: 14px;
   margin-bottom: 12px;
   border-radius: 12px;
-  border: 2px solid #e83e5c;
+  border: 2px solid #ff9500;
   cursor: pointer;
   font-size: 15px;
-  background: linear-gradient(90deg, #fff5f7, #ffecf0);
-  color: #6b1220;
+  background: linear-gradient(90deg, #fffbf0, #fff0e0);
+  color: #8b5a00;
   font-weight: 600;
   transition: all 200ms ease;
 }
 
 .option:hover {
-  background: linear-gradient(90deg, #ffd6e0, #ffc6d3);
-  border-color: #e83e5c;
+  background: linear-gradient(90deg, #ffc857, #ffb700);
+  border-color: #ff9500;
 }
 
 .option:active {
@@ -196,8 +196,8 @@ body {
 
 /* Wrong / Correct visual states */
 .option.wrong {
-  background: linear-gradient(90deg,#ffdede,#ffb6c1);
-  color: #7a1220;
+  background: linear-gradient(90deg,#ffcccc,#ffb3b3);
+  color: #8b4545;
   border-color: rgba(220,38,38,0.12);
   box-shadow: 0 6px 18px rgba(220,38,38,0.06) inset;
 }
@@ -288,12 +288,12 @@ body {
 
 <div id="countdownScreen" class="countdown-screen">
   <div class="countdown-number" id="countdownNumber">5</div>
-  <div class="countdown-sub">Get ready — Rose Day begins soon</div>
+  <div class="countdown-sub">Get ready — Proposal Day celebration begins soon</div>
 </div>
 
 <div id="celebrateScreen" class="celebrate-screen">
   <div class="celebrate-card">
-    <div class="celebrate-message">Happy Rose my dear love</div>
+    <div class="celebrate-message">Will you marry me, again!! 💍</div>
     <div class="flowers" id="flowers"></div>
   </div>
 </div>
@@ -313,13 +313,13 @@ const CHOCOLATE_LINK = "";
 /* TARGET DATETIME - set an ISO datetime string for when the quiz should start.
   Example: "2026-02-14T00:00:00" (UTC/Local depends on user's browser)
   Change this value to set the target date/time. */
-const TARGET_DATETIME = "2026-02-07T08:30:00";
+const TARGET_DATETIME = "2026-02-08T08:30:00";
 
 const questions = [
   {
-    q: "When did we first see each other?",
-    options: ["I don’t remember", "Jul 2", "Jun 30", "Jun 29"],
-    answer: 3,
+    q: "Where did we celebrate our first Anniversary?",
+    options: ["Chennai", "Gudapalli", "We weren't together :("],
+    answer: 1,
     special: true
   }
   // {
@@ -572,7 +572,7 @@ function showValentineScreen() {
   questionEl.innerHTML = "";
   optionsEl.innerHTML = `
     <div class="final-card">
-      <h2>🎉 Yay! You're My Valentine! 🎉</h2>
+      <h2>🎉 YES! Let's Get Married! 🎉</h2>
       <p>Thank you for making my day special! ❤️</p>
       <br>
       <button class="option" onclick="showChocolateScreen()">Continue 🍫</button>
@@ -586,7 +586,7 @@ function showChocolateScreen() {
   questionEl.innerHTML = "";
   optionsEl.innerHTML = `
     <div class="final-card">
-      <h2>🍫 A Sweet Surprise 🍫</h2>
+      <h2>💍 Our Beautiful Beginning 💍</h2>
       <p>
         Thank you for completing the quiz<br>
         and being my Valentine ❤️
